@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Jersey+15+Charted&family=Rubik+Puddles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Jersey+15+Charted&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Rubik+Puddles&display=swap');
+/* Contenedor principal */
+#div-contenedor {
+    position: relative;
+    max-width: 1000px;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    border: 5px solid lightpink;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+}
+
+/* Contenedor de cada elemento del carrusel */
+.div-padre {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    
+}
+
+.div-padre.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Estilo de las tarjetas */
+.tarjeta {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 182, 193, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta img {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  
+}
+
+/* Navegación por flechas */
+.div-2 {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    transform: translateY(-50%);
+}
+
+.icono-nav {
+    color: #f28e9d;
+    font-size: 24px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.icono-nav:hover {
+    color: #f28e9d;
+}
+
+/* Navegación por puntos */
+.div_puntos {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.puntos {
+    font-size: 50px;
+    text-decoration: none;
+    color: lightpink;
+    margin: 0 5px;
+    transition: transform 0.3s;
+}
+
+.puntos:hover {
+    transform: scale(1.5);
+}
+
+/* a partir de aqui estilos de las tragetas de descripción*/
+.descripcion-contenedor{
+    display:flex;
+    justify-content: space-around;
+    font-family: "Itim", cursive;
+    flex-wrap: wrap;
+}
+
+.descripcion-contenedor article{
+    flex: 1 200px;
+    border: 5px solid lightpink;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 10px;
+    flex-flow: column;
+}
+
+.descripcion-contenedor article div div{
+    height: 25px;
+    background-color:  #f28e9d;
+    border-radius: 5px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.descripcion-contenedor article div div h5{
+    /*text-align: center;*/
+    color: white;
+
+}
+
+.descripcion-contenedor article div,p{
+    margin-top:10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.contenedor-titulo{
+display: flex;
+flex-direction:column;
+justify-content: space-around;
+align-items: center;
+border:5px solid lightpink;
+border-radius
+: 5px;
+border-bottom: none;
+margin-top: 20px;
+background-color: #f28e9d;
+flex-wrap: wrap;
+/*flex-direction:column es el que permite convertir tanto al elemento hijo como al padre contenedores flex*/
+}
+
+.contenedor-titulo div{
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+    height: auto;
+    text-align: center;
+    justify-content: space-around;
+   
+   
+}
+.titulo{margin-left: 20px;
+margin-right: 20px;
+font-family:"Itim", cursive;
+color: azure;}
