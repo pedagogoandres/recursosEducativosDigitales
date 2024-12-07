@@ -1,0 +1,81 @@
+/* Estilo General */
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f9f2f4; /* Fondo claro */
+    color: #333;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita el desbordamiento horizontal */
+}
+
+/* Sección Principal */
+.section-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Artículos */
+.article-principal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Dos columnas */
+    gap: 50px; /* Espaciado entre elementos */
+    max-width: 100%; /* Ancho máximo */
+    margin: auto; /* Centrado */
+}
+
+/* Figuras */
+figure {
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden; /* Para evitar el desbordamiento */
+    transition: transform 0.3s; /* Efecto de hover */
+    position: relative; /* Para posicionar el enlace "comprar" */
+}
+
+/* Efecto de hover en figura */
+figure:hover {
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+/* Imagen */
+figure img {
+    width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
+    height: auto; /* Mantiene la proporción */
+    border-bottom: 2px solid #f28e9d; /* Línea decorativa */
+}
+
+/* Figcaption */
+figcaption {
+    padding: 10px;
+    font-size: 14px; /* Tamaño de texto */
+    color: #555; /* Color de texto */
+}
+
+/* Enlace "comprar" */
+figure a {
+    display: block;
+    background-color: #f28e9d; /* Rosa claro */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transición para hover */
+    font-weight: bold;
+}
+
+figure a:hover {
+    background-color: #c9ada7; /* Color al pasar el ratón */
+}
+
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .article-principal {
+        grid-template-columns: 1fr; /* Una columna en pantallas pequeñas */
+    }
+}
+
+
