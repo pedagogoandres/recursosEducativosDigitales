@@ -44,7 +44,7 @@ figure:hover {
 figure img {
     width: 100%; /* Asegura que la imagen ocupe todo el ancho disponible */
     height: auto; /* Mantiene la proporción */
-    border-bottom: 2px solid #f28e9d; /* Línea decorativa */
+    border-bottom: 2px solid #ffffff; /* Línea decorativa */
 }
 
 /* Figcaption */
@@ -57,7 +57,7 @@ figcaption {
 /* Enlace "comprar" */
 figure a {
     display: block;
-    background-color: #f28e9d; /* Rosa claro */
+    background-color: #8bd5fd; /* Rosa claro */
     color: #fff;
     text-align: center;
     padding: 10px;

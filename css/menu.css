@@ -15,6 +15,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Arial", sans-serif;
+    background-color: #e0f0ff; /* Azul claro suave para mayor claridad */
+    color: #333333; /* Texto oscuro para buena legibilidad */
 }
 
 /* Contenedor del logo y título */
@@ -26,13 +28,14 @@ body {
     flex-wrap: wrap;
     width: 100%;
     padding: 20px;
-    background-color: #f28e9d;
+    background-color: #6fbfe3; /* Azul medio para mayor contraste */
 }
 
 .logo-contenedor {
     flex: 1;
 }
-.titulo-contenedor{
+
+.titulo-contenedor {
     flex: 4;
     display: flex;
     flex-wrap: wrap;
@@ -44,7 +47,7 @@ body {
 }
 
 .h1-clay {
-    color: #fff;
+    color: #ffffff; /* Blanco para contraste */
     font-size: 3rem;
     font-weight: 700;
     margin: 10px 0;
@@ -54,16 +57,19 @@ body {
 
 /* Menú principal */
 .header {
-    background-color: #f28e9d;
+    background-color: #6fbfe3; /* Azul medio para coherencia */
     padding: 10px 0;
 }
-.bienvenida{
-    display:flex;
+
+.bienvenida {
+    display: flex;
     justify-content: center;
     align-items: center;
-    background-color:#f28e9d;
-    border: 1px solid black;
-    color: #fff;
+    background-color: #6fbfe3; /* Azul medio */
+    border: 1px solid #6499c6; /* Azul oscuro para bordes */
+    color: #ffffff; /* Texto blanco */
+    padding: 10px;
+    border-radius: 5px;
 }
 
 .listas {
@@ -90,24 +96,24 @@ body {
     text-align: center;
     margin: 5px;
     margin-right: 10px;
-    margin-right: 10px;
     position: relative;
-    border: 2px solid #fff;
+    border: 2px solid #6499c6; /* Azul oscuro para bordes */
+    border-radius: 5px;
 }
 
 .nav > li > a {
-    color: #fff;
+    color: #ffffff; /* Texto blanco */
     text-decoration: none;
     width: 90%;
     padding: 10px;
     display: block;
     transition: background 0.3s;
-    background-color: #f28e9d;
+    background-color: #5aaefc; /* Azul más oscuro para enlaces */
     border-radius: 5px;
 }
 
 .nav > li > a:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+    background-color: #4078b4; /* Azul aún más oscuro al pasar el ratón */
 }
 
 .nav > li ul {
@@ -116,11 +122,12 @@ body {
     top: 100%;
     left: 0;
     display: none;
-    background-color: #f3b6c0;
+    background-color: #b3e0ff; /* Azul claro para el submenú */
     padding: 10px 0;
     margin: 0;
     border-radius: 5px;
     min-width: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     z-index: 1000;
 }
 
@@ -129,14 +136,14 @@ body {
 }
 
 .nav > li ul li a {
-    color: #f7e0e4;
+    color: #333333; /* Texto oscuro en submenú */
     text-decoration: none;
     padding: 8px 15px;
     display: block;
 }
 
 .nav > li ul li a:hover {
-    background-color: #e8a6ab;
+    background-color: #99c9ff; /* Hover submenú azul intermedio */
 }
 
 @media (max-width: 768px) {
@@ -172,7 +179,6 @@ body {
         flex-wrap: wrap;
         width: 100%;
         padding: 20px;
-        background-color: #f28e9d;
+        background-color: #6fbfe3; /* Azul medio */
     }
-    
 }
